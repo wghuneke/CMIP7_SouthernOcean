@@ -120,10 +120,22 @@ for i in "${!INPUT_DIRS[@]}"; do
             || { echo "  selyear failed for $base, skipping..."; continue; }
 
         # --- Step 2: Remap to 360x180 grid ---
-        # remapbil (bilinear) for all
-        REMAP_METHOD="remapbil"
-        run_cdo cdo $REMAP_METHOD,r360x180 "$TMP_DIR/${base%.nc}_time.nc" "$TMP_DIR/${base%.nc}_remap.nc" \
-            || { echo "  remap failed for $base, skipping..."; continue; }
+	REMAP_METHOD="remapbil"
+        FALLBACK_METHOD="remapcon"
+
+        # Try bilinear first
+        if ! run_cdo cdo $REMAP_METHOD,r360x180 "$TMP_DIR/${base%.nc}_time.nc" "$TMP_DIR/${base%.nc}_remap.nc"; then
+            echo "  $REMAP_METHOD failed for $base, trying $FALLBACK_METHOD..."
+            # Try conservative remapping
+            if ! run_cdo cdo $FALLBACK_METHOD,r360x180 "$TMP_DIR/${base%.nc}_time.nc" "$TMP_DIR/${base%.nc}_remap.nc"; then
+                echo "  remap failed for $base (both methods), skipping..."
+                continue
+            fi
+        fi
+        ## remapbil (bilinear) for all
+        #REMAP_METHOD="remapbil"
+        #run_cdo cdo $REMAP_METHOD,r360x180 "$TMP_DIR/${base%.nc}_time.nc" "$TMP_DIR/${base%.nc}_remap.nc" \
+        #    || { echo "  remap failed for $base, skipping..."; continue; }
 
         # --- Step 3: Subset latitude (-90 to -40) ---
         run_cdo ncks -d lat,-90.,-40. "$TMP_DIR/${base%.nc}_remap.nc" "$TMP_DIR/${base%.nc}_final.nc" \
