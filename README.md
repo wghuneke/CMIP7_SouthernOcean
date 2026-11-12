@@ -40,3 +40,7 @@ Use both products where possible, otherwise use preferably the OCEAN ICE product
 
 Mixed layer depth:
 -  DeBoyer Montegut (2023) `/g/data/av17/access-nri/OM3/MLD-DeBoyerMontegut2023/mld_dr003_ref10m_v2023.nc`
+
+**Models to include in analysis**:
+
+Coming soon.
