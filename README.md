@@ -2,13 +2,14 @@
 A collaborative project to create and discuss figures for an assessment of the Southern Ocean state in CMIP7 fast-track.
 
 **Project aims**:
-1. Model biases (CMIP6 vs CMIP7)
+1. Model biases (CMIP6 vs CMIP7: historical 1995-2014 mean)
 - Showcase biases
 - Classify models
 - Understand biases
-2. Future change (CMIP7)
+2. Future change (CMIP7: VL , H future scenarios)
 
 **Overview of planned analyses**:
+
 Tier 1: Temperature, Salinity
 - SST, SSS
 - MLD
@@ -18,6 +19,7 @@ Tier 2: Circulation
 - Overturning
 - Gyres
 - ACC (?)
+- ASC
 
 Tier 3: Surface fluxes
 - surface wind stress
