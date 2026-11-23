@@ -34,8 +34,7 @@ Tier 3: Surface fluxes
 
 **Observational products**:
 Temperature/Salinity:
-- OCEAN ICE Southern Ocean Climatology, poleward from 45S: `/g/data/x77/jn8053/observations/zhou/OI_climatology.nc`
-! A copy will be available on `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset` for those without access to `x77` !
+- OCEAN ICE Southern Ocean Climatology, poleward from 45S: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/Observations`
 - WAO23: `/g/data/ik11/inputs/access-om3/woa23/monthly`
 Use both products where possible, otherwise use preferably the OCEAN ICE product.
 
