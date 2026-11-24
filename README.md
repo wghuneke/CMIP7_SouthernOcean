@@ -28,9 +28,10 @@ Tier 3: Surface fluxes
 
 **Where do I find a subset of the data on Australia's supercomputer gadi?**
 - CMIP6 historical: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP6/historical/`
-- CMIP7 historical: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/historical/`  [NA]
-- CMIP7 H future scenario: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/H/` [NA]
-- CMIP7 VL future scenario: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/VL/` [NA]
+- CMIP7 historical/esm-historical: 
+`/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/historical/`, `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/esm-hist/`
+- CMIP7 scen7-h/esm-scen7-h: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/scen7-h/`, `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/esm-scen7-h/` [COMING SOON]
+- CMIP7 scen7-vl/esm-scen7-vl: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/scen7-vl/`, `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/esm-scen7-vl/` [COMING SOON]
 
 **Observational products**:
 Temperature/Salinity:
