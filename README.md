@@ -26,6 +26,10 @@ Tier 3: Surface fluxes
 - surface heat flux
 - PME, runoff
 
+**Future change**
+
+Assess future change by comparing the end-of-century `2081-2100` with the historical period `1995-2014`.
+
 **Where do I find a subset of the data on Australia's supercomputer gadi?**
 
 CMIP6:
