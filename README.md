@@ -27,11 +27,13 @@ Tier 3: Surface fluxes
 - PME, runoff
 
 **Where do I find a subset of the data on Australia's supercomputer gadi?**
+CMIP6:
 - CMIP6 historical: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP6/historical/`
+CMIP7: Note there are either concentration-driven or emissions-driven runs. Some models, e.g. ACCESS-ESM1.6 provide both, others only one of them. The emissions-driven runs have a `esm-*` prefix.
 - CMIP7 historical/esm-historical: 
 `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/historical/`, `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/esm-hist/`
-- CMIP7 scen7-h/esm-scen7-h: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/scen7-h/`, `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/esm-scen7-h/` [COMING SOON]
-- CMIP7 scen7-vl/esm-scen7-vl: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/scen7-vl/`, `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/esm-scen7-vl/` [COMING SOON]
+- CMIP7 scen7-h/esm-scen7-h: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/scen7-h/`, `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/esm-scen7-h/` 
+- CMIP7 scen7-vl/esm-scen7-vl: `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/scen7-vl/`, `/g/data/lg87/wgh581/CMIP6_CMIP7_Subset/CMIP7/esm-scen7-vl/`
 
 **Observational products**:
 Temperature/Salinity:
